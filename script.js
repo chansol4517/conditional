@@ -13,3 +13,34 @@
     위의 모든 조건조건이 참이 아닐때 이곳의 구문을 무조건 실행하고 종료
   }
 */
+
+const hour = new Date().getHours();
+console.log(hour);
+
+//0~9 : lightblue
+//10~15 : orange
+//16~20 : pink
+//21~24 : purple
+
+// if(hour >=0 && hour<12){
+//     document.body.style.backgroundColor = "lightblue";
+// }
+
+//정석
+
+// if (hour >= 0 && hour < 10) {
+//     document.body.style.backgroundColor = "lightblue";
+// } else if (hour >= 10 && hour < 16) {
+//     document.body.style.backgroundColor = "orange";
+// } else if (hour >= 16 && hour < 21) {
+//     document.body.style.backgroundColor = "pink";
+// } else {
+//     document.body.style.backgroundColor = "purple";
+// }
+
+//간단하게
+
+if (hour < 10) document.body.style.backgroundColor = "lightblue";
+else if (hour < 16) document.body.style.backgroundColor = "orange";
+else if (hour < 21) document.body.style.backgroundColor = "pink";
+else document.body.style.backgroundColor = "purple";
